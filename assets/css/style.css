@@ -14,21 +14,20 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #3a3a3a;
-    font-family: 'inter', sans-serif;
+    color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #f5f5f5;
 }
 
-
 /* Header */
 header {
-    background-color: #ffffff;
+    background-color: #3a3a3a;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -41,9 +40,8 @@ header {
 
 header a {
     text-decoration: none;
-    color: #f5f5f5;
+    color: inherit;
 }
-
 
 #menu {
     font-size: 110%;
@@ -56,12 +54,13 @@ header a {
 }
 
 .active {
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #3a3a3a;
 }
+
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #343434;
+    background-color: black;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -85,65 +84,25 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-}
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-    #menu {
-        display: flex;
-    }
-
-    #menu > li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
-    }
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover{
-        border-bottom: 1px solid #f5f5f5;
-    }
+    margin-top: 47px;
 }
 
 /* Hero section */
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/9.webp") no-repeat center center/cover;
-}
-#cover-text {
-    background-color: rgb(52,52,52 .8);
-    font-size: 125%;
-    position: absolute;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
-    bottom: 25px;
+}
+
+#cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(233, 233, 233, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
     width: 80%;
     min-height: 200px;
     padding-top: 40px;
@@ -151,7 +110,7 @@ main {
 }
 
 #cover-text > h2, #cover-text > h3 {
-    color: f5f5f5;
+    color: #f5f5f5;
 }
 
 /* Reasons section */
@@ -194,4 +153,53 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #f5f5f5;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #f5f5f5;
+    }
 }
