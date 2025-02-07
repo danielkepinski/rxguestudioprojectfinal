@@ -29,10 +29,13 @@ h1, h2, h3 {
 .hidden-heading {
     display: none;
 }
+.hidden-heading {
+    display: none;
+}
 
 /* Header */
 header {
-    background-color: #000000;
+    background-color: #343434;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -165,7 +168,7 @@ main {
     justify-content: center;
 }
 
-/* Meetup Times section */
+/* times, map and services*/
 #times {
     background: url('../images/3.webp') no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
@@ -187,6 +190,31 @@ main {
 }
 
 #times h3 {
+    /* Override the heading colour set in general styles */
+    color: #f5f5f5;
+}
+
+#services div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of meetup time dives over the background image */
+    border: 2px solid white;
+}
+
+#services {
+    background: url('../images/6.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services h3 {
     /* Override the heading colour set in general styles */
     color: #f5f5f5;
 }
@@ -266,6 +294,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    background-color: #343434;
 }
 
 #social-networks i {
@@ -280,6 +309,15 @@ main {
         column-count: 2;
         column-gap: 0;
     }
+    #cover-text {
+        position: absolute;
+        top: 450px;
+        left: 80px;
+        max-height: 60px;
+    }
+    #hero
+    height: 400px;
+    width: 100%;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -321,6 +359,7 @@ main {
     #cover-text {
         width: 300px;
         right: 50px;
+        
     }
 
     /* Reasons section */
