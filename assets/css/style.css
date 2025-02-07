@@ -222,8 +222,8 @@ main {
 /* Default (on smaller screens, stack vertically) */
 #content-wrapper {
     display: flex;
-    flex-direction: column; /* Stacks the divs vertically by default */
-    gap: 20px;  /* Add spacing between child elements */
+    flex-direction: column; 
+    gap: 20px;  
 }
 
 /* Gallery page */
