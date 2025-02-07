@@ -103,7 +103,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/shop.webp") no-repeat center center/cover;
+    background: url("../images/pexels-mostafameraji-3037244.jpg") no-repeat center center/cover;
     position: relative;
 }
 
@@ -230,9 +230,11 @@ main {
 #photos img {
     width: 100%;
     line-height: 1em;
+
 }
 
 #photos {
+    height: auto;
     line-height: 0;
 }
 
