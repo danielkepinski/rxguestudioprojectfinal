@@ -18,6 +18,13 @@ body {
     font-family: 'inter', sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+}
+
 
 /* Header */
 header {
@@ -37,12 +44,6 @@ header a {
     color: #f5f5f5;
 }
 
-h1 {
-    font-family: 'inter', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #f5f5f5;
-}
 
 #menu {
     font-size: 110%;
@@ -137,6 +138,22 @@ main {
     width: 100%;
     background: url("../images/9.webp") no-repeat center center/cover;
 }
+#cover-text {
+    background-color: rgb(52,52,52 .8);
+    font-size: 125%;
+    position: absolute;
+    position: relative;
+    bottom: 25px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: f5f5f5;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
