@@ -120,6 +120,77 @@ footer {
     width: 100%;
     line-height: 1em;
 }
+/*booking page for styling*/
+#signup {
+    background-image: url("../images/shop.webp"); /* Use your desired background image */
+    background-position: center;
+    background-size: cover; /* Ensure the image covers the full background */
+    position: relative;
+    padding: 100px 0; /* Space for the form to sit nicely on the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+#signup-form {
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center;
+}
+
+#signup-form h2 {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+#signup-form label {
+    color: #343434; /* Set label color */
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+#signup-form input[type="text"], #signup-form input[type="email"], #signup-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    color: #343434;
+}
+
+#signup-form input[type="text"]:focus, #signup-form input[type="email"]:focus, #signup-form input[type="password"]:focus {
+    border-color: #007bff; /* Blue border when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue glow on focus */
+}
+
+#signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#signup-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     #menu {
@@ -129,6 +200,11 @@ footer {
     
     #nav-toggle:checked ~ nav #menu {
         display: flex;
+    }
+    #signup-form {
+        left: 0; /* Align the form to the center of the screen on small devices */
+        top: 0;
+        margin-top: 20px; /* Add a little margin on top */
     }
 }
 /* Media query: tablets and larger (768px and up) */
