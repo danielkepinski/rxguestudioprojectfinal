@@ -122,6 +122,7 @@ main {
     /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 #times div {
     color: #fafafa;
