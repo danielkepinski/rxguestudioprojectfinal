@@ -1,6 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-/* Asterisk wildcard selector to override default styles added by the browser */
+/* Reset styles */
 * {
     padding: 0;
     margin: 0;
@@ -11,10 +11,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles */
     background-color: #000000;
     color: #f5f5f5;
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 h1, h2, h3 {
     font-family: 'Inter', sans-serif;
@@ -30,19 +29,20 @@ h1, h2, h3 {
 .hidden-heading {
     display: none;
 }
-.hidden-heading {
-    display: none;
-}
+
 /* Header */
 header {
     background-color: #343434;
-    padding: 0 1rem;
+    padding: 1rem;
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 header a {
     text-decoration: none;
@@ -52,9 +52,10 @@ header a {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    display: flex;
 }
 #menu > li {
-    margin-bottom: 1em;
+    margin-left: 1rem;
 }
 .active {
     border-bottom: 1px solid #3a3a3a;
@@ -64,9 +65,11 @@ nav {
     position: absolute;
     width: 100%;
     left: 0;
-    padding: 0 1rem;
-    display: none;
     top: 100%;
+    background: #343434;
+    padding: 1rem;
+    display: none;
+    z-index: 100;
 }
 /* Nav toggle */
 #nav-toggle:checked~nav {
@@ -75,16 +78,13 @@ nav {
 #nav-toggle {
     display: none;
 }
-.nav-toggle-label {
-    font-size: 2rem;
-}
+
 /* Main content */
 main {
-    /* Enlarge main element to push footer down*/
-    flex: 1 0 auto;
-    /* Enable flex properties for child elements */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
 }
 /* Hero section */
 #hero {
@@ -93,20 +93,7 @@ main {
     background: url("../images/pexels-mostafameraji-3037244\ \(1\).jpg") no-repeat center center/cover;
     position: relative;
 }
-#cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(65, 65, 65, 0.7);
-    font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
-}
-#cover-text > h2, #cover-text > h3 {
-    color: #f5f5f5;
-}
+
 /* Reasons section */
 #reasons {
     width: 90%;
@@ -179,6 +166,7 @@ main {
     flex-direction: column; 
     gap: 20px;  
     flex-wrap: wrap;  /* Allow wrapping of elements if necessary */
+}
 /* Gallery page */
 #photos img {
     width: 100%;
@@ -229,18 +217,35 @@ main {
     color: #fafafa;
 }
 /* Footer */
-#social-networks {
+/* Footer */
+footer {
+    background-color: #343434;
     text-align: center;
     padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+}
+#social-networks {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
     list-style-type: none;
-    background-color: #343434;
 }
 #social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #f5f5f5;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        display: none;
+    }
+    
+    #nav-toggle:checked ~ nav #menu {
+        display: flex;
+    }
 }
 /* Media query for very small screens (300px and up) */
 @media screen and (min-width: 300px) and (max-width: 575px) {
