@@ -179,7 +179,6 @@ footer {
 @media screen and (max-width: 768px) {
     #menu {
         flex-direction: column;
-        display: none;
         flex-direction: column;
         align-items: end;
     }
@@ -211,7 +210,6 @@ nav {
     justify-content: space-between;
     columns: 2;
     position: relative;
-
     margin-bottom: 5px;
 }
     
@@ -230,7 +228,7 @@ nav {
     align-items: end;
 }
 [type="checkbox"] {
-    opacity: 0;
+    display: none; /* Hide checkbox on larger screens */
   }
 .nav-toggle-label i {
     display: none;    
@@ -247,7 +245,7 @@ nav {
 #reasons br {
     border-radius: 3px;
 }
-/* Gallery */
+/* Gallery for larger screens */
 #photos {
     column-count: 4;
 }
