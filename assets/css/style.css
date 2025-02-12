@@ -151,14 +151,14 @@ footer {
 }
 
 #signup-form input[type="text"]:focus, #signup-form input[type="email"]:focus, #signup-form input[type="password"]:focus {
-    border-color: #007bff; /* Blue border when focused */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue glow on focus */
+    border-color: #343434; /* dark gray border when focused */
+    box-shadow: 0 0 5px rgba(65, 65, 65, 0.5); /* Light grey glow on focus */
 }
 
 #signup-form button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff; /* Blue button */
+    background-color: #343434; /* Blue button */
     color: white;
     font-size: 1.1rem;
     border: none;
