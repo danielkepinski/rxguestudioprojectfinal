@@ -204,6 +204,16 @@ nav {
     font-size: 2rem;
     cursor: pointer;
 }
+#photos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    columns: 2;
+    position: relative;
+
+    margin-bottom: 5px;
+}
     
 #signup-form {
         left: 0; /* Align the form to the center of the screen on small devices */
@@ -231,7 +241,7 @@ nav {
     justify-content: space-between;
     margin-top: 20px;
 }
-#reasons h3 {
+#reasons h2, h3 {
     text-align: center;
 }
 #reasons br {
