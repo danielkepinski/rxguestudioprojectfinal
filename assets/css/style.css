@@ -182,6 +182,9 @@ footer {
         flex-direction: column;
         align-items: end;
     }
+    #reasons div {
+        padding: 5px;
+    }
     /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -242,8 +245,8 @@ nav {
 #reasons h2, h3 {
     text-align: center;
 }
-#reasons br {
-    border-radius: 3px;
+#reasons div {
+    padding: 3px;
 }
 /* Gallery for larger screens */
 #photos {
