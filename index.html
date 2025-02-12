@@ -13,6 +13,60 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body> 
+    <!-- model popup-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email Capture Popup</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Email Capture Pop-Up -->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Capture Popup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Email Capture Pop-Up -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup">
+            <h2>Get 10% Off Your First Service!</h2>
+            <p>Sign up for our newsletter and get an instant 10% discount on your first purchase.</p>
+            <form id="email-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <button class="close-btn" onclick="closePopup()">X</button>
+        </div>
+    </div>
+
+    <script>
+        // Show the popup on page load
+        window.onload = function() {
+            document.getElementById("popup-overlay").style.display = "block";
+        };
+
+        // Close the popup when the close button is clicked
+        function closePopup() {
+            document.getElementById("popup-overlay").style.display = "none";
+        }
+
+        // Handle form submission
+        document.getElementById("email-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Subscribed successfully! Enjoy your 10% discount.");
+            closePopup();
+        });
+    </script>
+</body>
+</html>
+
     <div class="container">
       <header>
         <a href="index.html">
