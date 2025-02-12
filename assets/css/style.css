@@ -73,7 +73,6 @@ main {
 }
 /*model popup*/
 /* General styling for the popup overlay */
-/* General styling for the popup overlay */
 .popup-overlay {
     display: none;
     position: fixed;
@@ -152,10 +151,15 @@ button:hover {
     top: 10px;
     right: 40px;
     cursor: pointer;
-    z-index: 1010;  /* Ensure it's on top of other elements */
-    transform: translateY(-50%) translateY(-5px) translateX(135px); 
+    width: 20px;
+    height: 20px;
+    line-height: 20px; /* Centers the 'X' inside the small button */
+    transform: translateY(-50%) translateY(-5px); 
 }
-
+/* Ensure the button doesn't change size on hover */
+.close-btn:hover {
+    background-color: transparent;
+}
 
 /* Header style */
 .popup h2 {
