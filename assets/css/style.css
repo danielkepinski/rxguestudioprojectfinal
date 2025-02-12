@@ -226,6 +226,12 @@ nav {
         top: 0;
         margin-top: 20px; /* Add a little margin on top */
 }
+/*footer copyright for smaller screens*/
+.copyright {
+    text-align: left;
+    text-size-adjust: 80%;
+    transform: translateY(44px);
+}
 }
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
