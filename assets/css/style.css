@@ -29,6 +29,7 @@ h1, h2, h3 {
 .hidden-heading {
     display: none;
 }
+
 /* Header */
 header {
     background-color: #343434;
@@ -229,6 +230,12 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+}
+#reasons h3 {
+    text-align: center;
+}
+#reasons br {
+    border-radius: 3px;
 }
 /* Gallery */
 #photos {
