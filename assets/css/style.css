@@ -96,7 +96,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     /* Move the popup 200px down from the center */
     margin: auto;
-    transform: translateY(-50%) translateY(200px);  /* Adjusting this */
+    transform: translateY(-50%) translateY(200px);  /* Adjusting location of the popup */
     position: relative;  /* Important for positioning the close button */
 }
 
@@ -154,7 +154,7 @@ button:hover {
     width: 20px;
     height: 20px;
     line-height: 20px; /* Centers the 'X' inside the small button */
-    transform: translateY(-50%) translateY(-5px); 
+    transform: translateY(-50%) translateY(-5px); /* moved location of the x*/
 }
 /* Ensure the button doesn't change size on hover */
 .close-btn:hover {
@@ -229,6 +229,7 @@ footer {
     width: 100%;
     margin-top: auto;
 }
+/*social media buttons*/
 #social-networks {
     display: flex;
     justify-content: center;
@@ -252,7 +253,8 @@ footer {
     width: 100%;
     line-height: 1em;
 }
-/*booking page for styling*/
+/*booking page*/
+/*form to request booking*/
 #signup {
     background-image: url("../images/shop.webp"); /* Use your desired background image */
     background-position: center;
