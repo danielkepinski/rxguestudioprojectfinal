@@ -79,6 +79,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 90%; /*to make sure it moves with smaller screens*/
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     justify-content: center;
@@ -375,6 +376,8 @@ nav {
     transform: translateY(44px);
 }
 }
+/*popup responsiveness*/
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 #menu {
